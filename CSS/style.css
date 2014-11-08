@@ -1,0 +1,51 @@
+       
+
+
+a:link
+{
+    text-decoration:none;
+    font-size: 27px;
+    border-bottom: double;
+    border-bottom-color: #009933;
+    border-bottom-width: 4px;
+    color:#383838;
+    margin-left: 500px;
+}
+
+a:hover
+{
+    color:#006699;
+    text-decoration:underline;
+}
+
+a:visited
+{
+    color:#006699;
+    text-decoration:none;
+}
+
+a:active
+{
+    color:green;
+    text-decoration:underline;
+}
+
+ body
+    {
+       
+        background-image:url("../images/aviation2.jpg");
+        background-size: 1350px 1000px;
+        background-repeat: no-repeat;
+    
+    }
+h1
+{
+    border: hidden;
+    width: 700px;
+    padding-left: 400px;
+    margin-left: 85px;
+    background: #A8A8A8;
+   color: #D8D8D8;
+   margin-top: 150px; 
+    
+}

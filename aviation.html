@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <title> Aviation Course </title>
+   <style>
+      body
+      {
+	background-color: #E0E0E0 ; 
+      }
+      h3
+      {
+	 border: hidden;
+	 background-color: #006699;
+	 color: #F0F0F0;
+	 width: 1000px;
+	 margin-left: 90px;
+	 font-size: 20px;
+	border-left: double;
+
+
+      }
+      h2
+      {
+	 color: #009999;
+	font-family: inherit;
+      }
+      
+    #showDef1, #showDef2, #showDef3
+    {
+      color: #009933;
+    }
+    #Def1, #Def2, #Def3
+    {
+      color: #00CC99;
+    }
+   </style>
+</head>
+
+<body>
+   
+<script src ="http://code.jquery.com/jquery.js"></script>
+
+<div id = "Intro">
+    <h3> <center> Type the right definition of the given acronyms into the box and press "Show Answer" to proceed </center></h3>
+</div>
+
+<div id = "Main">	
+	
+	<h2> AOPA: </h2>
+	
+	<img src = "Images/AOPA.png" alt="" width="435" height="320"> <br>
+	<label>Enter the definition: <input type="text" id = "typeBox1"></label>
+	<button id = "showDef1">Show Answer</button> <br>
+	<p id = "Def1"> [Aircraft Owners and Pilots Association] </p>
+	
+	<h2> PIC: </h2> 
+	
+	<img src = "Images/PIC.jpg" alt=""> <br>
+	<label>Enter the definition: <input type="text" id = "typeBox2"></label>
+	<button id ="showDef2">Show Answer</button> <br> 
+	<p id = "Def2"> [Pilot in Command] </p> <br>
+	
+	<h2> ADM: </h2>
+	<img src = "Images/ADM.gif" alt=""> <br>
+	<label>Enter the definition: <input type="text" id = "typeBox3"></label>
+	<button id ="showDef3">Show Answer</button> <br>
+	<p id = "Def3"> [Aeronautical Decision Making] </p> <br>
+	
+	
+<script>
+    $("p").hide(); // Hide all the p, which is the definition, by default.
+	
+	$("#showDef1").click(function() // Click the show button to expand the definition.
+	{
+		$("#Def1").slideToggle("fast");
+	});
+	
+	$("#showDef2").click(function()
+	{
+		$("#Def2").slideToggle("fast");
+	});
+	
+	$("#showDef3").click(function()
+	{
+		$("#Def3").slideToggle("fast");
+	});
+</script>
+
+</div>
+<a href="aviation page.html">Click here to go back home</a>
+<br>
+<a href="quiz.html">Quiz me now!</a>
+</body>
+</html>

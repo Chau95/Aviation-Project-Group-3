@@ -1,0 +1,107 @@
+body {
+    background-image: url(../Images/compass.png);
+    background-repeat:no-repeat;
+    background-position:625px 250px;
+    background-color:lightblue;
+    padding:2em;
+}
+
+h1 {
+    text-align:center;
+    top:30px;
+    color:green;
+}
+
+#image2 {
+    position:absolute;
+    top:400px;
+    right:250px;
+}
+
+#image2:hover .img_transition {
+    height:100px;
+    transform:translateY(90px);
+}
+
+#image2:hover .show-message {
+    background:rgba(0, 0, 0, 0.5);
+    color:#fff;
+    height:115px;
+    transform:translateY(90px);
+}
+
+#message {
+    width:200px;
+    height:50px;
+    left:250px;
+    border:1px solid #ccc;
+    position:relative;
+}
+
+#message:hover .img_transition {
+    height:100px;
+    transform:rotate(-20deg);
+}
+
+#message:hover .show-message {
+    background:grey;
+    color:#fff;
+    height:115px;
+    transform:rotate(-20deg);
+}
+
+#image3 {
+    position:absolute;
+    top:400px;
+    left:291px;
+}
+
+#image3:hover .show-message {
+    background:grey;
+    color:#fff;
+    height:115px;
+    transform:translateY(90px);
+}
+
+#image4 {
+    position:absolute;
+    top:120px;
+    right:250px;
+}
+
+#image4:hover .img_transition {
+    height:100px;
+    transform:translateY(90px);
+}
+
+#image4:hover .show-message {
+    background:rgba(0, 0, 0, 0.5);
+    color:#fff;
+    height:115px;
+    transform:translateY(90px);
+}
+
+.img_transition {
+    transition-duration:.5s;
+    -webkit-transition-duration:.5s;
+    -moz-transition-duration:.5s;
+    -o-transition-duration:.5s;
+    overflow:hidden;
+    height:0px;
+}
+
+.show-message {
+    transform-origin:top;
+    transition-duration:.9s;
+    -webkit-transform-origin:top;
+    -webkit-transition-duration:.5s;
+    -moz-transform-origin:top;
+    -moz-transition-duration:.5s;
+    -o-transform-origin:top;
+    -o-transition-duration:.5s;
+    
+    font-size:10px;
+    font-family:arial;
+    font-weight:normal;
+}
+
