@@ -1,0 +1,157 @@
+#btnLargeFont {
+    position:absolute;
+    top:5px;
+    right:0px;
+}
+
+#btnOriginalFont {
+    position:absolute;
+    top:35px;
+    right:0px;
+}
+#btnHide1 {
+    position:absolute;
+    top:410px;
+    left:800px;
+}
+
+#btnHide2 {
+    position:absolute;
+    top:450px;
+    left:800px;
+}
+
+#btnShow1 {
+    position:absolute;
+    top:410px;
+    left:900px;
+}
+
+#btnShow2 {
+    position:absolute;
+    top:450px;
+    left:900px;
+}
+
+#name {
+    font-family:Arial;
+    font-weight:700;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+
+}
+#skills {
+    font-family:Arial;
+    font-weight:800;
+    font-size:11pt;
+    color:white;
+    position:absolute;
+    top:500px;
+    left:800px;
+}
+
+#email {
+    font-family:times;
+    font-weight:900;
+    text-decoration:underline;
+    color:green;
+}
+
+#references {
+    font-family:arial;
+    font-weight:500;
+    color:green;
+}
+
+#referenceTitle {
+    font-family:arial;
+    font-weight:800;
+    color:darkorange;
+    text-decoration:underline;
+}
+
+#education {
+    font-family:arial;
+    font-weight:700;
+    color:darkorange;
+    position:absolute;
+    top:200px;
+    left:350px;
+}
+
+#educationList {
+    font-family:arial;
+    font-weight:700;
+    color:darkorange;
+    position:absolute;
+    top:250px;
+    left:350px;
+}
+
+#jobs {
+    font-family:arial;
+    font-weight:700;
+    color:red;
+    position:absolute;
+    top:350px;
+    left:350px;
+}
+
+#jobsList {
+    font-family:arial;
+    font-weight:700;
+    color:red;
+    position:absolute;
+    top:400px;
+    left:350px;
+}
+
+#detail1 {
+    font-family:arial;
+    font-weight:500;
+    color:red;
+}
+
+#detail2 {
+    font-family:arial;
+    font-weight:500;
+    color:red;
+}
+
+.list {
+    text-decoration:underline;
+    color:red;
+}
+
+h2 {
+    font-family:Times;
+    font-weight:300;
+    color: darkred;
+    text-decoration:underline;
+}
+
+body {
+    background-image: url(../Images/code.jpg);
+    padding: 2em;
+}
+
+a:link {
+    text-decoration:none;
+    color:blueviolet;
+}
+
+a:visited {
+    color:blue;
+    text-decoration:none;
+}
+
+a:active {
+    color:green;
+    text-decoration:underline;
+}
+
+h1.hover {
+    background-image: url('Images/linkedinpic_glasses.jpg');
+}

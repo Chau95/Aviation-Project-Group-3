@@ -1,6 +1,3 @@
-       
-
-
 a:link
 {
     text-decoration:none;
@@ -9,7 +6,7 @@ a:link
     border-bottom-color: #009933;
     border-bottom-width: 4px;
     color:#383838;
-    margin-left: 500px;
+    margin-left: 600px;
 }
 
 a:hover
@@ -30,22 +27,29 @@ a:active
     text-decoration:underline;
 }
 
+form {
+    position:absolute;
+    top:500px;
+    left:685px;
+}
+
  body
     {
        
-        background-image:url("../images/aviation2.jpg");
-        background-size: 1350px 1000px;
+        background-image:url("../Images/aviation2.jpg");
+        background-size: 1518px 800px;
         background-repeat: no-repeat;
     
     }
 h1
 {
+    text-align:center;
     border: hidden;
-    width: 700px;
-    padding-left: 400px;
-    margin-left: 85px;
-    background: #A8A8A8;
-   color: #D8D8D8;
-   margin-top: 150px; 
+    width: 500px;
+    padding-left: 15px;
+    margin-left: 500px;
+    background: #0F111D;
+    color: #D8D8D8;
+    margin-top: 150px; 
     
 }

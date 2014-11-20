@@ -1,0 +1,16 @@
+/* Author: Michael Lant
+ * APW1.css
+ * Version 2.00
+ */
+ 
+body
+{
+    background-image:url("Images/blue_background.jpg");
+    background-repeat:no-repeat;
+    background-size: 1518px 800px;
+}
+
+#APW1-GRID 
+{
+    padding: 50px 50px;
+}
