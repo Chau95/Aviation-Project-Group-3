@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <!-- Important Notes:
-This version added huge contents to the site!
 
-1. Added a cool background and makes it scales. Clean up some old CSSs.
-2. All practices are now centered, and hopefully scale.
-3. Everything is non case-sensitive.
-4. Add a "Next" button and only enable it when the student pass the pratice
-5. Most importantly, four different practices are added, including:
-- Acronym.
-- Picture/Word.
-- Fill in the blanks.
-- Drop down list matching.
-
-Status: The whole page looks cool and is functional (assuming all input are correct answers, see more on Bugs)
-through number 4, I have yet to write code for the Drop list matching.
-
-Bugs: An error is that for number 2, 3 and 4,
-when a wrong answer is entered, the error message would display. However,
-after 3 times, the right answer wont pop up, hence not enabling the Next button
-to move on. When a right answer is entered, the process is back to normal.
-I will try to patch this ASAP, but for demo, it wont affect anything.
-
-Answers for each problem if you want to test the site and help me fix the bug:
+Answers for each problem:
 1. Aircraft Owners and Pilots Association
 2. Temporary Flight Restriction
 3. "Options", "Choose" and "Evaluate" respectively
@@ -35,15 +15,14 @@ Answers for each problem if you want to test the site and help me fix the bug:
    <style>
       body
 	 {
-	    background-image: url('Images/Sky.jpg');
+	    background-color: #789048;
 	    background-size:100%;
-	    background-repeat:no-repeat;
 	 }
 	 
       h2
 	 {
 	    font-size: 150%;
-	    color: #009999;
+	    color: #FF9900;
 	    font-family: inherit;
 	    text-align: center;
 	 }
@@ -51,11 +30,20 @@ Answers for each problem if you want to test the site and help me fix the bug:
       h3
 	 {
 	    font-family: inherit;
-	    background-color: #006699;
+	    background-color: #789048;
+	    color: white;
 	    border-style: solid;
-	    color: #F0F0F0;
+	    border-left-color: #789048;
+	    border-right-color: #789048;
+	    text-align: center;
 	    font-size: 200%;
-	    border-left: double;
+	 }
+	 
+	 h4
+	 {
+	    font-size: 150%;
+	    color: #789048;
+	    font-family: inherit;
 	    text-align: center;
 	 }
 	    
@@ -110,6 +98,47 @@ Answers for each problem if you want to test the site and help me fix the bug:
 	 height:400px;
       }
       
+      .mq
+       {
+        color: #f0f0d8;
+        border-radius: 8px;
+        background-color:#FF9900;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+         margin-left: 5px;
+         
+       }
+       .mq:hover
+       {
+        color: #789048;
+       }
+       .home
+       {
+        color: #f0f0d8;
+        border-radius: 8px;
+        background-color:#FF9900;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+       }
+       
+       .home:hover
+       {
+         color: #789048;
+      }
+      
+      #practiceBody
+       {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        background-color: #f0f0d8;
+       }
 }
  </style> 
 
@@ -117,12 +146,16 @@ Answers for each problem if you want to test the site and help me fix the bug:
 </head>
 
 <body>
-   
+<a class = "home" href = "testNav.html"> Home </a>
+<a class = "mq"  href = "MPractice.html"> Sections </a>
+
 <script src ="http://code.jquery.com/jquery.js"></script>
 <h3> <center> <strong>PRACTICE PAGE</strong></center></h1>
+
+<div id = practiceBody>
 <div id = "Intro">
-    <h2> <center> Answer the question below and press "Submit" to proceed. <br>
-		  The answer will show up after 3 wrong guesses.</center></h2> <br> <br>
+    <h4> <center> Answer the question below and press "Submit" to proceed. <br>
+		  The answer will show up after 3 wrong guesses.</center></h4> <br> <br>
 </div>
 <!-- &#8594 means Right Arrow-->
 <div id = "Main1">
@@ -207,9 +240,8 @@ Answers for each problem if you want to test the site and help me fix the bug:
 	<h2><b>You have finished the Practice!</b></h2>
 	
 </div>
-<a href="navPage.html">Click here to go back home</a> <br>
-<a href="quiz.html">Quiz me now!</a>
-</body>
+
+
 
 <script>
     $("p").hide(); // Hide all the p, which is the definition, by default.
@@ -254,9 +286,10 @@ Answers for each problem if you want to test the site and help me fix the bug:
 	    $("#Main2").show();
 	});
 	
+	var counter2 = 0;
 	$("#Submit2").click(function()
 	{
-	    counter++;
+	    counter2++;
 		if ($("#typeBox2").val().toLowerCase() == $("#Def2").text().toLowerCase())
 		{
 		  $("#Def2").replaceWith("You have answered correctly. Please move on!");
@@ -264,7 +297,7 @@ Answers for each problem if you want to test the site and help me fix the bug:
 		  
 		  $("#Next2").removeAttr("disabled"); // Enable the Next button.
 		}
-		else if (counter == 3)
+		else if (counter2 == 3)
 	       {
 		  $("#Def2").show("fast");
 		  $("#Wrong2").remove();
@@ -284,9 +317,10 @@ Answers for each problem if you want to test the site and help me fix the bug:
 	    $("#Main3").show();
 	});
 	
+	var counter3 = 0;
 	$("#Submit3").click(function()
 	{
-	    counter++;
+	    counter3++;
 		if (($("#typeBox3_1").val().toLowerCase() == $("#Def3_1").text().toLowerCase())
 		&& ($("#typeBox3_2").val().toLowerCase() == $("#Def3_2").text().toLowerCase())
 	        && ($("#typeBox3_3").val().toLowerCase() == $("#Def3_3").text().toLowerCase()))
@@ -296,7 +330,7 @@ Answers for each problem if you want to test the site and help me fix the bug:
 		  
 		  $("#Next3").removeAttr("disabled"); // Enable the Next button.
 		}
-		else if (counter == 3)
+		else if (counter3 == 3)
 	       {
 		  $("#Def3").show("fast");
 		  $("#Wrong3").remove();
@@ -335,7 +369,6 @@ Answers for each problem if you want to test the site and help me fix the bug:
 	});
 	
 </script>
-
-
-
+</div>
+</body>
 </html>
